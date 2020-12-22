@@ -1,0 +1,527 @@
+:root {
+    --vh:
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    text-align: center; 
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+
+    background: linear-gradient(to right bottom, rgb(200, 200, 250), rgb(248, 203, 203))/*rgb(174, 174, 255), rgb(255, 179, 179))*/;
+    height: 100vh;
+    background-position: center;
+    background-size: cover no-repeat;
+}
+
+input {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+
+/*  -----  MAIN TITLE "LETTERS TO NUMBERS"  -----  */
+
+.head_1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.35em;
+}
+
+/*  -----  COLORFUL BAR  -----  */
+
+.separater_bar {
+    text-align: center;
+    margin: 11px auto;
+    height: .3vh;
+    width: 90vw;
+    background: radial-gradient(rgb(164, 241, 112), rgb(113, 211, 228));
+    border-radius: 5em;
+}
+
+/*  -----  DESCRIPTION UNDER COLORFUL BAR  -----  */
+
+.head_2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -0.0075em;
+}
+
+/*  -----  "INPUT YOUR NAME BELOW"  -----  */
+
+.body_section {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.9rem;
+    margin-bottom: 0 auto;
+}
+
+/*  -----  TEXT INSIDE INPUT FIELD  -----  */
+
+#input_text {
+    border-radius: 13px;
+    padding: .5rem;
+    border: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    opacity: 60%;
+}
+
+/*  -----  SUBMIT BUTTON PROPERTIES  -----  */
+
+#submit_button {
+    background-color: rgb(51, 177, 51);
+    border-radius: 50px;
+    border: 2px solid rgb(51, 177, 51);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    margin: 0 auto;
+    padding: 10px 32px;
+    transition: ease-in .3s, ease-out .3s;
+}
+#submit_button:hover {
+    background-color: rgb(81, 172, 81);
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    transition: ease-in .3s, ease-out .3s;
+}
+#submit_button:active {
+    background-color: rgb(81, 166, 172);
+    color: rgb(212, 253, 212);
+}
+
+
+/*  -----  RESULTS SECTION OF PAGE  -----  */
+
+.results_section {
+    text-align: none;
+    border: none;
+    border-radius: 15px;
+    background: url(double-bubble-outline.png);
+    /*  h-offset, v-offset, blur, spread  */
+    box-shadow: -12px -8px 40px #46464650;
+    padding: 2rem;
+    margin: 10vh auto;
+    width: 90%;
+    opacity: 60%;
+}
+
+
+/*  -----  "LETTERS: " IN RESULTS SECTION OF PAGE  -----  */
+
+#letter {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.0075em;
+    text-align: left;
+}
+
+/*  -----  RESULT: LOWERCASE LETTERS FROM INITIAL INPUT (printLetters())  -----  */
+
+#inputLetters {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -0.0075em;
+    text-align: center;
+    width: 100%;
+}
+
+/*  -----  "NUMBERS: " IN RESULTS SECTION OF PAGE  -----  */
+
+#individual {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.0075em;
+    text-align: left;
+}
+
+/*  -----  RESULT: INDIVIDUAL NUMBERS SPACED OUT ( individualNumbers() )  -----  */
+
+#individual_numbers {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -0.0075em;
+    text-align: center;
+    width: 100%;
+}
+
+/*  -----  "TOTAL NUMBER: " IN RESULTS SECTION OF PAGE  -----  */
+
+#number {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.0075em;
+    text-align: left;
+}
+
+/*  -----  RESULT: SUM OF TOTAL NUMBERS FROM INITIAL INPUT (FUNCTION)  -----  */
+
+#convertedNumbers {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -0.0075em;
+    text-align: center;
+    width: 100%;
+}
+
+/*  -----  RESTART BUTTON PROPERTIES  -----  */
+#restart_button {
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border: 2px solid rgb(241, 86, 86);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(59, 25, 25);
+    margin: 5rem auto;
+    padding: 10px 32px;
+    transition: ease-in .3s, ease-out .3s;
+}
+#restart_button:hover {
+    background-color: rgb(241, 86, 86);
+    color: rgb(255, 232, 232);
+    cursor: pointer;
+    transition: ease-in .3s, ease-out .3s;
+}
+#restart_button:active {
+    background-color: rgb(155, 82, 82);
+    color: rgb(212, 253, 212);
+}
+
+
+
+
+
+
+/*  Border for results section - just in case  
+2px rgb(114, 47, 47) solid
+*/
+
+
+/*  MEDIA QUERIES FOR SCREEN SIZES  */
+
+/* ----------- iPhone 11 ----------- */
+/* 1792x828px at 326ppi */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .head_1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .head_2 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+        margin: 2rem;
+    }
+    #input_text {
+        border-radius: 100px;
+        width: 75vw;
+    }
+    .results_section {
+        text-align: center;
+        padding: 0rem;
+        margin: 10vh auto;
+        width: 90vw;
+    }
+    #letter {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #inputLetters {
+        width: 90%;
+    }
+    #individual {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #individual_numbers {
+        width: 90%;
+    }
+    #number {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #convertedNumbers {
+        width: 90%;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .head_1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .head_2 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+        margin: 2rem;
+    }
+    #input_text {
+        border-radius: 100px;
+        width: 75vw;
+    }
+    .results_section {
+        text-align: center;
+        padding: 0rem;
+        margin: 10vh auto;
+        width: 90vw;
+    }
+    #letter {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #inputLetters {
+        width: 90%;
+    }
+    #individual {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #individual_numbers {
+        width: 90%;
+    }
+    #number {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #convertedNumbers {
+        width: 90%;
+    }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .head_1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .head_2 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+        margin: 2rem;
+    }
+    #input_text {
+        border-radius: 100px;
+        width: 75vw;
+    }
+    .results_section {
+        text-align: center;
+        padding: 0rem;
+        margin: 10vh auto;
+        width: 90vw;
+    }
+    #letter {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #inputLetters {
+        width: 90%;
+    }
+    #individual {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #individual_numbers {
+        width: 90%;
+    }
+    #number {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #convertedNumbers {
+        width: 90%;
+    }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .head_1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .head_2 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+        margin: 2rem;
+    }
+    #input_text {
+        border-radius: 100px;
+        width: 75vw;
+    }
+    .results_section {
+        text-align: center;
+        padding: 0rem;
+        margin: 10vh auto;
+        width: 90vw;
+    }
+    #letter {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #inputLetters {
+        width: 90%;
+    }
+    #individual {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #individual_numbers {
+        width: 90%;
+    }
+    #number {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #convertedNumbers {
+        width: 90%;
+    }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .head_1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .head_2 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+        margin: 2rem;
+    }
+    #input_text {
+        border-radius: 100px;
+        width: 75vw;
+    }
+    .results_section {
+        text-align: center;
+        padding: 0rem;
+        margin: 10vh auto;
+        width: 90vw;
+    }
+    #letter {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #inputLetters {
+        width: 90%;
+    }
+    #individual {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #individual_numbers {
+        width: 90%;
+    }
+    #number {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #convertedNumbers {
+        width: 90%;
+    }
+}
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .head_1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        letter-spacing: 0.15em;
+    }
+    .head_2 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+        margin: 2rem;
+    }
+    #input_text {
+        border-radius: 100px;
+        width: 75vw;
+    }
+    .results_section {
+        text-align: center;
+        padding: 0rem;
+        margin: 10vh auto;
+        width: 90vw;
+    }
+    #letter {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #inputLetters {
+        width: 90%;
+    }
+    #individual {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #individual_numbers {
+        width: 90%;
+    }
+    #number {
+        letter-spacing: 0em;
+        margin: auto;
+        padding: 2rem;
+    }
+    #convertedNumbers {
+        width: 90%;
+    }
+}

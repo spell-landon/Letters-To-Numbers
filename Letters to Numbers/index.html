@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <a name="top"></a>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Letters To Numbers
+        </title>
+        
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        
+        <!-- HEADER SECTION -->
+        <header>
+            
+            <!--- <div>s or whatever else here-->
+                <div class="head_1">LETTERS TO NUMBERS</div>
+                <div class="separater_bar"></div>
+                <div class="head_2">An input field that will convert words to numbers</div>
+        </header>
+
+
+        <!--- BODY SECTION (INPUT FIELD AND SUBMIT BUTTON) -->
+        <div class="body_section">
+            <section class="content">
+                <h4>Input your name below</h4>
+                <input 
+                    id="input_text" 
+                    type="text" 
+                    placeholder="Name" 
+                    name="textinput" 
+                    value='' 
+                    pattern="[A-Za-z]">
+                </input>
+            </section>
+            <br>
+
+
+            <!---- SUBMIT BUTTON --->
+            <section class="button">
+                <a href="#results">
+                    <input 
+                        id="submit_button"
+                        type="submit" 
+                        name="submit" 
+                        value="SUBMIT" 
+                        pattern="[A-Za-z]"
+                        onclick=printLetters();individualNumbers();totalNumbers();fillRestartButtonColor();deselectSubmitButtonColor()>
+                    </input>
+                </a>
+            </section>
+        </div>
+
+
+        <!---- RESULTS SECTION (SHOWS THE RESULT AFTER INPUT)--->
+        <div class="results_section">
+            <a name="results">
+                <section id="results">
+                    <h4 id="letter"><b>Letters: </b></h4>
+                        <input type="text" id="inputLetters" readonly></input>
+                    <br>
+                    <h4 id="individual"><b>Numbers: </b></h4>
+                        <input type="text" id="individual_numbers" readonly></input>
+                    <br>
+                    <h4 id="number">Total Number: </h4>
+                        <input type="text" id="convertedNumbers" readonly></input>    
+                </section>
+            </a>
+        </div>
+
+
+        <!---- RESTART BUTTON --->
+        <section class="button">
+            <a href="#top">
+                <input
+                    id="restart_button"
+                    type="submit" 
+                    name="restart" 
+                    value="RESTART" 
+                    pattern="[A-Za-z]"
+                    onclick=changeButtonColorAfterRestart();resetInputField();resetResults();resetRestartButtonColor();setFocus()>
+                </input>
+            </a>
+        </section>
+
+
+        <!---- END OF PAGE --->
+       <script src="script.js"></script>
+
+    </body>
+</html>
